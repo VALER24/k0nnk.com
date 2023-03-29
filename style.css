@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .user-list {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  .user-list h2 {
+    margin: 0 0 10px 0;
+  }
+  
+  .user-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .user-list li {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  .chat-box {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .chat-box h2 {
+    margin: 0 0 10px 0;
+  }
+  
+  .message-list {
+    overflow-y: scroll;
+    flex: 1;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message span {
+    display: block;
+  }
+  
+  .message.from-user .username {
+    font-weight: bold;
+  }
+  
+  .message.from-user {
+    text-align: right;
+  }
+  
+  .message.from-other-user {
+    text-align: left;
+  }
+  
+  #message-form {
+    display: flex;
+  
